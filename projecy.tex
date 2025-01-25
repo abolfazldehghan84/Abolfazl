@@ -1,0 +1,78 @@
+\usepackage{graphicx}
+\begin{document}
+\includegraphics[width=\textwidth]{‍~/Pictures/Screanshots//home/ahmad/Pictures/Screenshots/Screenshot from 2024-12-09 23-00-32.png}
+\end{document}
+
+\section{github}
+\subsection{Repository Initialization and Commits}
+Go to the GitHub website.
+Log in to your GitHub account or create a new account if you don't have one.
+On your dashboard, click the New button to create a new repository.
+\subsection{Clone the Repository to Your Local Machine}
+After creating the repository, go to the repository page on GitHub.
+In the Code section, you'll find the URL of your repository.
+Clone the repository to your local machine
+\subsection{Add Files to the Repository}
+\subsection{Commit the Changes}
+\subsection{Push the Changes to GitHub}
+
+
+
+
+
+\subsection{vim}
+\subsubsection{Telescope}
+Vim has plugins that make searching and navigating files and their contents incredibly fast. One of 
+these plugins is Telescope, which allows you to quickly search through files, command history, and more.
+:Telescope find_files
+
+\subsubsection{Macro Recording}
+One of the most useful and powerful features in Vim is macro recording. Macros allow you to 
+record a series of commands and play them back later, which is especially useful for repetitive tasks.
+
+\subsection{Folding}
+lows you to collapse (fold) text, which makes your workspace cleaner and easier to manage
+especially when dealing with large codebases or complex documents.
+
+\subsubsection{Memory Profiling}
+In this semester, you became familiar with dynamic memory allocation in C in your Programming Fundamentals class. Memory profiling is the process of analyzing and managing memory usage in your programs to ensure that memory is allocated and deallocated efficiently, preventing issues like memory leaks and excessive memory usage.
+\subsectionn{Memory Leak}
+A memory leak occurs when a program allocates memory (typically using functions like malloc or calloc in C) but fails to release that memory after it is no longer needed, leading to a gradual increase in memory consumption over time. This can cause a program to run out of memory, slow down, or even crash.
+\subsubsection{Memory Profilers}
+Memory profilers are tools that help you identify and analyze memory usage, including memory leaks, in your program. One popular memory profiler is Valgrind. It helps detect memory leaks, access to uninitialized memory, and other memory-related errors.
+Valgrind provides detailed information about memory usage, helping developers locate memory leaks and ensure proper memory management in their programs.
+
+\subsection{ Bash Scripting in GNU/Linux}
+\subsubsection{ fzf (Fuzzy Searching Tool)}
+fzf is a command-line tool for searching and filtering data interactively. It allows you to search for files, directories, or any list of items in a fuzzy manner. With fuzzy searching, you don't need to type the exact match, and it will still find results that are similar to what you type.
+Fuzzy searching means searching for a term or phrase where the input doesn't have to be exact. You can type part of a word, and fzf will find results that are closest to what you entered. This is useful when you can't remember the full name or exact details of the file or item you are looking for.
+
+The command ls | fzf works as follows:
+\begin { itemize }
+\item 
+The command ls lists the contents of the current directory.
+\item
+This list is then passed to fzf.
+\item
+    fzf opens an interactive search interface, allowing you to choose a file or folder from the list.
+\end {itemize}
+
+\subsubsection{Using fzf to Find Your Favorite PDF}
+To list all PDF files, you'll use the command fd. fd is a faster and simpler alternative to find for searching files. The command to list all .PDF files is:
+fd -e pdf
+
+Now that you've listed all the PDF files using fd, you want to use fzf to select one. You can do this with the following command:
+fd -e pdf | fzf
+
+\subsubsection{Opening the File with Zathura}
+To open a PDF file with Zathura, you can use the following command:
+
+zathura /path/to/file
+
+If you want to open the PDF you selected using fzf and fd, you can use this command:
+
+zathura $(fd -e pdf | fzf)
+
+\section{git and foss}
+
+no i dont , because i am not interested at it.
